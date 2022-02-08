@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" type="image/png" href="/static/icon2.png"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>COVID-19 SelfChecker</title>
+    
+  </head>
+  <body> 
+    <div class="bg-image" style="background-image: url('/static/76.jpg');height: 100vh;">
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(232,213,196,255);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        </b><a class="navbar-brand" href="/" style="color: rgb(75, 42, 112);"><b>COVID-19 SelfChecker</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about" style="color: rgb(75, 42, 112);">About Us</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/about#contact" tabindex="-1" aria-disabled="true"style="color: rgb(75, 42, 112);">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://red-beach-0fec6a200.1.azurestaticapps.net/"style="color: rgba(8,74,130,255);">NewsLetter</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-style: solid;color: rgba(8,74,130,255); border-color: rgba(8,74,130,255)">
+            <button class="btn btn-secondary" type="button"style="background-color: rgba(232,213,196,255);color:rgba(8,74,130,255);">Go</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h2 class="text-center mt-3" style="color:rgb(75, 42, 112);">COVID-19 SelfChecker</h2>
+        
+        <div class="card" style="margin-top: 10%; border-radius:10px; color:rgb(75, 42, 112); background-color: rgba(245, 245, 245, 0.4);">
+          <div class="card-header">
+            <b>Thanks for using Covid probability detector.</b>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Probability of Infection is {{infection_probability}}%. Thank You</h5>
+            <p class="card-text">Message . You are out of danger.</p>
+
+        <center>
+            <a href="/">
+              <button class="btn btn-outline-secondary" type="submit" style="background-color: rgba(143,79,113,255); color:whitesmoke;"><b>Check Again</b></button>
+          </a>
+
+          <a href="{{ url_for('show')}}">
+            <button class="btn btn-outline-secondary" type="submit" style="background-color: rgba(143,79,113,255); color:whitesmoke;"><b>Schedule A Test </b></button>
+        </a>
+        <a href="https://red-beach-0fec6a200.1.azurestaticapps.net/">
+          <button class="btn btn-outline-secondary" type="submit" style="background-color: rgba(143,79,113,255); color:whitesmoke;"><b>Subscribe To The NewsLetter</b></button>
+
+        <a href="https://selfregistration.cowin.gov.in/" target="_blank">
+          <button class="btn btn-outline-secondary" type="submit" style="background-color: rgba(143,79,113,255); color:whitesmoke;"><b>Vaccination Slot Booking</b></button>
+      </a>
+
+      <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank">
+        <button class="btn btn-outline-secondary" type="submit" style="background-color: rgba(143,79,113,255); color:whitesmoke;"><b>Emergancy Contacts</b></button>
+    </a>
+    </center>
+        </div>
+          </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

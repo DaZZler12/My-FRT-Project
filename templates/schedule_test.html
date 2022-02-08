@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="widt_todayh=device-widt_todayh, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/static/icon2.png"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>COVID-19 SelfChecker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+    <!-- CDN for sweet ALert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <!--Jquery Cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+  </head>
+
+
+
+  <body> 
+
+    
+    <!-- content for flash message -->
+
+    <div class="bg-image" style="background-image: url('/static/76.jpg'); height: 165vh;">
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(232,213,196,255);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        </b><a class="navbar-brand" href="/" style="color: rgb(75, 42, 112);"><b>COVID-19 SelfChecker</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/about" style="color: rgb(75, 42, 112);">About Us</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/about#contact" tabindex="-1" aria-disabled="true"style="color: rgb(75, 42, 112);">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://red-beach-0fec6a200.1.azurestaticapps.net/"style="color: rgba(8,74,130,255);">NewsLetter</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="border-style: solid;color: rgba(8,74,130,255); border-color: rgba(8,74,130,255)">
+            <button class="btn btn-secondary" type="button"style="background-color: rgba(232,213,196,255);color:rgba(8,74,130,255);">Go</button>
+          </form>
+        </div>
+      </nav>
+      
+
+      <div class="container">
+        <h2 class="text-center mt-3" style="color:rgb(75, 42, 112);">COVID-19 SelfChecker</h2>
+        
+        <div class="card" style="margin-top: 5%; border-radius:10px; color:rgb(75, 42, 112);  background-color: rgba(245, 245, 245, 0.4);">
+          <div class="card-header">
+            Thanks for using Covid probability detector.
+          </div>
+    
+          <div class="card-body" style="color: rgb(75, 42, 112);;">
+            <center><h3 class="card-title"><b>Book Your Slot</b></h3></center>
+            <p class="card-body">
+
+    <!-- flask flash message -->
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+              {% if messages %}
+                <ul class=flashes>
+                {% for category, message in messages %}
+                  <!-- <li class="{{ category }}">{{ message }}</li> -->
+          
+                  <!-- Here I will define the sweet Alert Message Here-->
+          
+                  <script>
+                          swal({
+                          icon: '{{category}}',
+                          title: '{{message}}',
+                          text: '{{text_msg}}',
+                          closeOnClickOutside: false,
+                          button: '{{btn}}'
+                        }).then(function(){
+                        window.location="/";
+                    });
+                  </script>
+          
+                {% endfor %}
+                </ul>
+              {% endif %}
+            {% endwith %}
+
+<!-- form for booking Covid19-testing slot -->
+   <form  action ="{{url_for('schedule_test')}}" method="POST" class="row g-3"  style="margin-left:2%;margin-right:2%;font-size: larger;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;color: rgba(8,74,130,255);" id="book_sot">
+                <div class="row">
+  
+                  <div class="col-md-6">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" placeholder="First Name" id="fname" name = "fname" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last Name" id="lname" name = "lname" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
+                  </div>
+                <div class="col-md-6"><br>
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" placeholder="Enter Email" id="email" name = "email" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
+                </div>
+                <div class="col-md-6"><br>
+                  <label for="phonumber" class="form-label">Enter Contact Number</label>
+                  <input type="tel" class="form-control" id="phonenumber"  name ="phonenumber" placeholder="Enter Contact Number">
+                </div required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
+
+                <div class="col-12"><br>
+                  <label for="address1" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="address1"name="address1" placeholder="Enter Permanent Address" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
+                </div>
+                <div class="col-12"><br>
+                  <label for="address2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="address2"name="address2" placeholder="Apartment, House No, or Floor" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
+                </div>
+                <div class="row g-4" style="margin-left: 0.1%; margin-top: 1%;">
+                  <div class="col-sm-3"><br>
+                    <input type="text" class="form-control" placeholder="City" aria-label="City" id="city" name ="city" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
+                  </div>
+                  <div class="col-sm-3"><br>
+                    <input type="text" class="form-control" placeholder="State" aria-label="State" id="state" name ="state" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
+                  </div>
+                  <div class="col-sm-3"><br>
+                    <input type="text" class="form-control" placeholder="Zip" aria-label="Zip" id="pin" name ="pin" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
+                  </div>
+
+                  <div class="col-sm-3"><br>
+                    <input type="date" class="form-control" placeholder="date" aria-label="date" id="dateControl" name ="date" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
+                  </div>
+                </div>
+              
+                <div class="col-12"><br>
+                  <button class="btn btn-success my-2 my-sm-0" type="submit" style="background-color: rgba(143,79,113,255); color:whitesmoke;" id="book"><b>Book Now</b></button>
+                </div>
+              </form>
+            </p>
+        <br>
+        <center style="margin-left: 30%; margin-top:3%; margin-bottom:3%;">
+            <a href="https://red-beach-0fec6a200.1.azurestaticapps.net/">
+              <button class="btn btn-success my-2 my-sm-0" type="button" style="background-color: rgba(143,79,113,255); color:whitesmoke;"><b>Subscribe To NewsLetter</b></button></a>
+              
+          <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank">
+            <button class="btn btn-success my-2 my-sm-0" type="button" style="background-color: rgba(143,79,113,255); color:whitesmoke;"><b>Emergancy Contacts</b></button>
+        </a>
+        </center>
+      </div></div>
+      </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Jquery Cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    
+
+
+    <script type="text/javascript">
+      $(document).ready(function()
+      {
+          var dt_today = new Date();
+          var month = dt_today.getMonth()+1;
+          var day = dt_today.getDate();
+          var year = dt_today.getFullYear();
+          var fday = day+7;
+          day++;
+          if(month<10)
+            month='0'+month.toString();
+          if(day<10)
+            day='0'+day.toString();
+          if(fday<10)
+            fday='0'+day.toString();
+
+          var formin = year+"-"+month+"-"+day;
+
+          var formax = year+"-"+month+"-"+fday;
+          $('#dateControl').attr({'min':formin, 'max':formax});/*Process to send multiattributes*/
+      });
+
+     /* $("#book").click(function()
+      {
+        var fname = $("#fname").val();
+        var lname = $("#lname").val();
+        var email = $("#email").val();
+        var phone = $("#phonenumber").val();
+        var ad1 = $("#address1").val();
+        var ad2 = $("#address2").val();
+        var city = $("#city").val();
+        var state = $("#state").val();
+        var pin = $("#pin").val();
+        var date = $("#dateControl").val();
+
+
+        if(fname=='',lname=='',email=='',phone=='',ad1=='',ad2=='', city=='' , state=='' ,pin=='', date=='')
+              swal({
+                icon: 'error',
+                title: 'Fields Empty!!',
+                text: 'Fill All The Fields To Book Your Slot.',
+                closeOnClickOutside: false,
+                button: 'Proceed'
+              })
+        else
+        {
+            var server_data = [
+              {"fname": fname},
+              {"lname": lname},
+              {"email": email},
+              {"phonenumber": phone},
+              {"address1":ad1},
+              {"address2":ad2},
+              {"city":city},
+              {"state":state},
+              {"pin":pin},
+              {"date":date}
+            ];
+          swal({
+                icon: 'success',
+                title: 'Hi, '+fname,
+                text: 'ThankYou, You will be notified on email shortly!!',
+                button:'Done'
+              }).then(function(e){
+                if(e.value==true)
+                {
+                  //var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                  console.log("hi");
+                  $.ajax({
+                      type: "POST",
+                      url: "/slotbook",
+                      //data: $('form').serialize(),
+                      data: JSON.stringify(server_data),
+                      contentType: "application/json",
+                      dataType: 'JSON',
+                      success: function(response) {
+                        swal("Done!", results.message, "success");
+                      },
+                        error: function(error) {
+                          swal("Error!", results.message, "error");
+                      }
+                    });
+                    }else {
+                        e.dismiss;
+                        }
+                        }, function (dismiss) {
+                        return false;
+                        })
+                        }
+              })*/
+
+
+              /*
+              .$.ajax({
+                      type: "POST",
+                      url: "/slotbook",
+                      data: JSON.stringify(server_data),
+                      contentType: "application/json",
+                      dataType: 'json'
+                    });
+              */
+</script>
+
+
+        <!--Jquery Cdn -->
+
+<!-- Below method is able to post the data to the main.py but the page gets reload and no flash is shown-->
+
+<!-- <script>
+        $(document).on('submit','#book_slot',function(e)
+      {
+        //e.preventDefault();
+        if(($("#fname").val()==''), ($("#lname").val()=='') , ($("#email").val()=='') , ($("#phonenumber").val() =='') ,( $("#address1").val() =='') , ( $("#address2").val() =='') , ($("#city").val() =='') , ($("#state").val()=='') ,( $("#pin").val()=='' ),( $("#dateControl").val()==''))
+        {
+          //e.preventDefault();
+          /*swal({
+                icon: 'error',
+                title: 'Fields Empty!!',
+                text: 'Fill All The Fields To Book Your Slot.',
+                closeOnClickOutside: false,
+                button: 'Proceed'
+              });*/
+              swal("Error!", results.message, "error");
+         
+        }
+            else
+            {
+              $.ajax({
+                type:'POST',
+                url:'schedule_test',
+                data:{
+                  fname:$("#fname").val(),
+                  lname:$("#lname").val(),
+                  email:$("#email").val(),
+                  phonenumber:$("#phonenumber").val(),
+                  address1:$("#address1").val(),
+                  address2:$("#address2").val(),
+                  city:$("#city").val(),
+                  state:$("#state").val(),
+                  pin:$("#pin").val(),
+                  date:$("#date").val()
+                },
+                success:function()
+                {
+                  alert('saved');
+                }
+              })
+            }
+      });
+            
+    </script> -->
+
+
+<!-- code obtained from NewsLetter not working out-->
+
+<!-- <script>
+        (function ($) {
+          // "use strict";
+          
+          // if subscribe button is clicked
+          
+          $("book").click(function(){
+
+
+              var fname = $('#fname');
+              var lname = $('#lname');
+              var email = $('#email');
+              var phone = $('#phonenumber');
+              var ad1 = $('#address1');
+              var ad2 = $('#address2');
+              var city = $('#city');
+              var state = $('#state');
+              var pin = $('#pin');
+              var date = $('#dateControl');
+
+              var check = true;
+              
+              if($(fname).val()!="" , $(lname).val()!="" , $(email).val()!="" , $(phone).val()!="" , $(ad1).val()!="" , $(ad2).val()!="" , $(city).val()!="" , $(state).val()!="" , $(pin).val()!="" , $(date).val()!="") 
+              {
+                  check=false;
+                  swal({
+                              icon: 'warning',
+                              title: 'Hi, User',
+                              //text: result,
+                              button:'Done'
+                          }).then(function(){
+                              window.location="#";
+                          });
+              }
+              
+            else if (check == true) {
+                  $.ajax
+            ({ 
+              url: 'schedule_test',
+              type: 'get',
+              data:{
+                  fname:$(fname).val(),
+                  lname:$(lname).val(),
+                  email:$(email).val(),
+                  phonenumber:$(phonenumber).val(),
+                  address1:$(address1).val(),
+                  address2:$(address2).val(),
+                  city:$(city).val(),
+                  state:$(state).val(),
+                  pin:$(pin).val(),
+                  date:$(date).val()
+                },
+              success: function(result)
+              {
+                //$('#susmessage').text(result)
+
+                          swal({
+                              icon: 'success',
+                              title: 'Hi, User',
+                              //text: result,
+                              button:'Done'
+                          }).then(function(){
+                              window.location="#";
+                          });
+              }
+            });
+
+              }
+              return check;
+          });
+          });
+</script> -->
+
+  </body>
+</html>
