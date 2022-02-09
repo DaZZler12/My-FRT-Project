@@ -2,7 +2,7 @@
   "version": "2.0",
   "extensions": {
     "sendGrid": {
-        "from": "<abhirupbhattacharya8@gmail.com>"
+        "from": "<abc@gmail.com>"
     }
 },
   "logging": {
