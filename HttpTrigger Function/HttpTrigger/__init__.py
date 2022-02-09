@@ -9,7 +9,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     action = req.params.get('action')
     email = req.params.get('email')
     
-    table_service = TableService(account_name='covidnsletter', account_key='nPTZPN6BBlB9158EzeQ8vIGMpocMfj6xsnMeMZmtYCC4fFy1rPHN40VjcY0tpEC8Z2KmzDaG0h7xsMX0/Lbwxw==')
+    table_service = TableService(account_name='put table name', account_key='put storage account key')
     
     if action == "subscribe":
         count = 0
