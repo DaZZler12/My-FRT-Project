@@ -3,11 +3,8 @@
 
 
 <!-- PROJECT SHIELDS -->
-[![MIT License][license-shield]](LICENSE)
+[![MIT License][license-shield]](https://github.com/DaZZler12/My-FRT-Project/blob/main/LICENSE)
 [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/abhirup-bhattacharya-72973a199)
-<!-- [![MIT License][license-shield]](https://github.com/DaZZler12/My-FRT-Project/blob/main/LICENSE)
-[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/abhirup-bhattacharya-72973a199) -->
-
 
 
 <!-- PROJECT LOGO -->
