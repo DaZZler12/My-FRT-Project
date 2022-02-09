@@ -1,32 +1,20 @@
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
 
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![MIT License][license-shield]](https://github.com/DaZZler12/My-FRT-Project/blob/main/LICENSE)
+[![MIT License][license-shield]](LICENSE)
 [![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/abhirup-bhattacharya-72973a199)
+<!-- [![MIT License][license-shield]](https://github.com/DaZZler12/My-FRT-Project/blob/main/LICENSE)
+[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/abhirup-bhattacharya-72973a199) -->
 
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/DaZZler12/My-FRT-Project/tree/master">
-    <img src="images/icon2.png" alt="Logo" width="90" height="90">
+  <a href="https://mycovid19selfchecker.azurewebsites.net/">
+    <img src="images/icon2.png" alt="Logo" width="100" height="90">
   </a>
 
 <h2 align="center">Covid19 Self-Checker</h2>
