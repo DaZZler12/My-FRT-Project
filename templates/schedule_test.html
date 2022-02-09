@@ -17,6 +17,18 @@
 
         <!--Jquery Cdn -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+
+    <!-- <script>
+      window.onload = function(){
+        swal({
+                        icon: 'warning',
+                        title: 'Hi, User Sorry for the inconvenience!',
+                        text: 'My Azure for students credit expired, thus I am hosting my web app on the Free F1 service plan, for which while booking slot there will be an INTERNAL SERVER ERROR! Still, You want to Proceed.',
+                        button:'Proceed',
+                        closeOnClickOutside: false,
+                    });
+    }
+    </script> -->
   </head>
 
 
@@ -68,33 +80,8 @@
 
     <!-- flask flash message -->
 
-            {% with messages = get_flashed_messages(with_categories=true) %}
-              {% if messages %}
-                <ul class=flashes>
-                {% for category, message in messages %}
-                  <!-- <li class="{{ category }}">{{ message }}</li> -->
-          
-                  <!-- Here I will define the sweet Alert Message Here-->
-          
-                  <script>
-                          swal({
-                          icon: '{{category}}',
-                          title: '{{message}}',
-                          text: '{{text_msg}}',
-                          closeOnClickOutside: false,
-                          button: '{{btn}}'
-                        }).then(function(){
-                        window.location="/";
-                    });
-                  </script>
-          
-                {% endfor %}
-                </ul>
-              {% endif %}
-            {% endwith %}
-
 <!-- form for booking Covid19-testing slot -->
-   <form  action ="{{url_for('schedule_test')}}" method="POST" class="row g-3"  style="margin-left:2%;margin-right:2%;font-size: larger;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;color: rgba(8,74,130,255);" id="book_sot">
+   <form  action ="/schedule" method="POST" class="row g-3"  style="margin-left:2%;margin-right:2%;font-size: larger;font-family:Georgia, 'Times New Roman', Times, serif;font-weight: bold;color: rgba(8,74,130,255);" id="book_sot">
                 <div class="row">
   
                   <div class="col-md-6">
@@ -116,11 +103,11 @@
 
                 <div class="col-12"><br>
                   <label for="address1" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="address1"name="address1" placeholder="Enter Permanent Address" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
+                  <input type="text" class="form-control" id="address1" name="address1" placeholder="Enter Permanent Address" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
                 </div>
                 <div class="col-12"><br>
                   <label for="address2" class="form-label">Address 2</label>
-                  <input type="text" class="form-control" id="address2"name="address2" placeholder="Apartment, House No, or Floor" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
+                  <input type="text" class="form-control" id="address2" name="address2" placeholder="Apartment, House No, or Floor" required="" oninvalid="this.setCustomValidity('Enter your input to Book Slot')" oninput="setCustomValidity('')">
                 </div>
                 <div class="row g-4" style="margin-left: 0.1%; margin-top: 1%;">
                   <div class="col-sm-3"><br>
@@ -141,6 +128,35 @@
                 <div class="col-12"><br>
                   <button class="btn btn-success my-2 my-sm-0" type="submit" style="background-color: rgba(143,79,113,255); color:whitesmoke;" id="book"><b>Book Now</b></button>
                 </div>
+
+                
+                  
+            {% with messages = get_flashed_messages(with_categories = true) %}
+            {% if messages %}
+              <ul class=flashes>
+              {% for category, message in messages %}
+                <!-- <li class="{{ category }}">{{ message }}</li> -->
+        
+                <!-- Here I will define the sweet Alert Message Here-->
+        
+               <script> 
+                        swal({
+                        icon: '{{category}}',
+                        title: '{{message}}',
+                        text: '{{text_msg}}',
+                        closeOnClickOutside: false,
+                        button: '{{btn}}'
+                      }).then(function(){
+                      window.location="/";
+                  })
+                  </script>
+                 
+        
+              {% endfor %}
+              </ul>
+            {% endif %}
+          {% endwith %}
+
               </form>
             </p>
         <br>

@@ -16,4 +16,5 @@ cloudpickle
 scikit-learn
 joblib
 sendgrid
+flash
 pip
