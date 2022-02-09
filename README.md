@@ -98,8 +98,7 @@ For input = [1,0,1,1,1] ==> output = 64% and the system will classify the case a
   4.	Lastly, to host the web application, I have used Azure App Service and to host the NewsLetter website I have used the Azure Static web App.<br /><br />
   </h5>
   
-# (*) (Unfortunately, My Azure for students' credit expired, thus the storage account is not accessible as well as the associated HttpTrigger and TimerTrigger Functions are out of service! Sorry for the inconvenience!) 
-<style>H1{color:Red;}</style>
+# (*)(Unfortunately, My Azure for students' credit expired, thus the storage account is not accessible as well as the associated HttpTrigger and TimerTrigger Functions are out of service! Sorry for the inconvenience!) 
 
   
 - ![subscription](https://github.com/DaZZler12/My-FRT-Project/blob/main/images/imgend.jpg?raw=true)
