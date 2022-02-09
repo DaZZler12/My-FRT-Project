@@ -62,8 +62,8 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
       </ul>
     </li>
-    <li><a href="#My WebApp">My WebApp</a></li>
-    <li><a href="#about">AboutUs</a></li>
+    <li><a href="#My-WebApp">My-WebApp</a></li>
+    <li><a href="#AboutUs">AboutUs</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -96,11 +96,13 @@ For input = [1,0,1,1,1] ==> output = 64% and the system will classify the case a
 3.	To send regular mail to all subscribed users, I created a TIMER-TRIGGER function that is linked to the Twilio SendGrid API. To create and access this SendGrid API, one must first create a SaaS subscription through the Azure Portal, from which one will receive a URL to redirect to the SendGrid portal. Now, the Timer Trigger function will take all of the email addresses stored in the table and, using the SendGrid API, send emails to all of the subscribers at a predetermined time. (*)
  <br /><br />
   4.	Lastly, to host the web application, I have used Azure App Service and to host the NewsLetter website I have used the Azure Static web App.<br /><br />
-  
-  (*) [ Unfortunately, My Azure for students' credit expired, thus the storage account is not accessible as well as the associated HttpTrigger and TimerTrigger Functions are out of service! Sorry for the inconvenience! ]
   </h5>
   
-![subscription](https://github.com/DaZZler12/My-FRT-Project/blob/main/images/imgend.jpg?raw=true)
+# (*) (Unfortunately, My Azure for students' credit expired, thus the storage account is not accessible as well as the associated HttpTrigger and TimerTrigger Functions are out of service! Sorry for the inconvenience!) 
+<style>H1{color:Red;}</style>
+
+  
+- ![subscription](https://github.com/DaZZler12/My-FRT-Project/blob/main/images/imgend.jpg?raw=true)
   
 <p align="right">(<a href="#top">Move Up!</a>)</p>
 
@@ -173,8 +175,8 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-<!-- various webpages of my web app -->
-## My WebApp
+<!-- My-WebApp -->
+## My-WebApp
   
   ![subscription](https://github.com/DaZZler12/My-FRT-Project/blob/main/images/show.jpg?raw=true)
   ![subscription](https://github.com/DaZZler12/My-FRT-Project/blob/main/images/pic2.jpg?raw=true)
@@ -190,8 +192,8 @@ _To know more about Azure, please refer to the [Documentation](https://docs.micr
 
 
 
-<!-- ROADMAP -->
-## [AboutUs] (https://mycovid19selfchecker.azurewebsites.net/about)
+<!-- AboutUs -->
+## [AboutUs](https://mycovid19selfchecker.azurewebsites.net/about)
 
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
