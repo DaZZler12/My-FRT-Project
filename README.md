@@ -87,6 +87,17 @@ For input = [1,0,1,1,1] ==> output = 64% and the system will classify the case a
   
 - ![subscription](https://github.com/DaZZler12/My-FRT-Project/blob/main/images/imgend.jpg?raw=true)
   
+  
+  #Flowchart for the prediction system
+  
+  ![flow1](https://github.com/DaZZler12/My-FRT-Project/blob/main/images/flow1.jpg?raw=true)
+  
+  #Flowchart of the NewsLetter System
+  
+  ![flow2](https://github.com/DaZZler12/My-FRT-Project/blob/main/images/flow2.jpg?raw=true)
+  
+  
+  
 <p align="right">(<a href="#top">Move Up!</a>)</p>
 
 
