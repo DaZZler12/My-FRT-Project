@@ -88,11 +88,11 @@ For input = [1,0,1,1,1] ==> output = 64% and the system will classify the case a
 - ![subscription](https://github.com/DaZZler12/My-FRT-Project/blob/main/images/imgend.jpg?raw=true)
   
   
-  #Flowchart for the prediction system
+  # Flowchart for the prediction system
   
   ![flow1](https://github.com/DaZZler12/My-FRT-Project/blob/main/images/flow1.jpg?raw=true)
   
-  #Flowchart of the NewsLetter System
+  # Flowchart of the NewsLetter System
   
   ![flow2](https://github.com/DaZZler12/My-FRT-Project/blob/main/images/flow2.jpg?raw=true)
   
@@ -189,7 +189,7 @@ _To know more about Azure, please refer to the [Documentation](https://docs.micr
 <!-- AboutUs -->
 ## [AboutUs](https://mycovid19selfchecker.azurewebsites.net/about)
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/DaZZler12/My-FRT-Project/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">Move Up!</a>)</p>
 
@@ -226,7 +226,7 @@ Distributed under the MIT License. See [MIT License](LICENSE) for more informati
 Abhirup Bhattacharya - [@_A_bhirup](https://twitter.com/_A_bhirup)
   
 Important Project Link: 
-  1. [Flask Complete Web APplication](https://github.com/DaZZler12/My-FRT-Project/tree/master)
+  1. [Flask Complete Web Application](https://github.com/DaZZler12/My-FRT-Project/tree/master)
   2. [HttpTrigger Function](https://github.com/DaZZler12/My-FRT-Project/tree/Functions/HttpTrigger%20Function)
   3. [TimerTrigger Function](https://github.com/DaZZler12/My-FRT-Project/tree/TimerFunction/TimerTrigger)
   4. [Covid19 NewsLetter Static Website](https://github.com/DaZZler12/covid19-info-frt)
