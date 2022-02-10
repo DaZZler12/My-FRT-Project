@@ -128,7 +128,7 @@ For input = [1,0,1,1,1] ==> output = 64% and the system will classify the case a
 Do the following needful in order to setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites/ What is the best way to get started with the project?
 
 1. Install Python and the below mentioned packeges
    ```sh
