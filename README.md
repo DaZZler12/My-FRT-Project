@@ -47,7 +47,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#Prerequisites/ What is the best way to get started with the project?">Prerequisites/ What is the best way to get started with the project?</a></li>
       </ul>
     </li>
     <li><a href="#My-WebApp">My-WebApp</a></li>
