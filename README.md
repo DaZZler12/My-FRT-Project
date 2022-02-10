@@ -47,7 +47,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#Prerequisites/ What is the best way to get started with the project?">Prerequisites/ What is the best way to get started with the project?</a></li>
+        <li><a href="#Prerequisites / What are the best ways to get started with this project?">Prerequisites / What are the best ways to get started with the project?</a></li>
       </ul>
     </li>
     <li><a href="#My-WebApp">My-WebApp</a></li>
@@ -128,7 +128,7 @@ For input = [1,0,1,1,1] ==> output = 64% and the system will classify the case a
 Do the following needful in order to setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites/ What is the best way to get started with the project?
+### Prerequisites / What are the best ways to get started with this project?
 
 1. Install Python and the below mentioned packeges
    ```sh
