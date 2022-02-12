@@ -13,7 +13,7 @@
 <h1>
  Some Important Links:-
  <ol>
- <li><a href="https://mycovid19selfchecker.azurewebsites.net/" target="_blank">My Project URL</a></li>
+ <li><a href="https://mycovid19selfchecker.azurewebsites.net/" target="blank">My Project URL</a></li>
   <li>Project Demo Videos :- i. <a href="https://drive.google.com/file/d/1dtUsfguaD5Z9dQg9tVTxr6f8vV_RmEbY/view?usp=sharing" target="_blank">Video-1 </a> ii. <a href="https://drive.google.com/file/d/1L5qkumMOv6EIQjezlBc8CwaDMthQtM8T/view?usp=sharing" target="_blank">Video-2 </a></li>
   <li>Azure Services Used:-
    <ul><li><a href="https://github.com/DaZZler12/My-FRT-Project/tree/master" target="_blank">Azure App Services Coding Implementation</a>, <a href="https://github.com/DaZZler12/My-FRT-Project/actions/runs/1817825408">Deployment</a>, <a href="https://mycovid19selfchecker.azurewebsites.net/" target="_blank">Running Website</a><br><br>
