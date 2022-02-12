@@ -13,17 +13,17 @@
 <h1>
  Some Important Links:-
  <ol>
- <li><a href="https://mycovid19selfchecker.azurewebsites.net/" target="blank">My Project URL</a></li>
-  <li>Project Demo Videos :- i. <a href="https://drive.google.com/file/d/1dtUsfguaD5Z9dQg9tVTxr6f8vV_RmEbY/view?usp=sharing" target="_blank">Video-1 </a> ii. <a href="https://drive.google.com/file/d/1L5qkumMOv6EIQjezlBc8CwaDMthQtM8T/view?usp=sharing" target="_blank">Video-2 </a></li>
+ <li><a href="https://mycovid19selfchecker.azurewebsites.net/">My Project URL</a></li>
+  <li>Project Demo Videos :- i. <a href="https://drive.google.com/file/d/1dtUsfguaD5Z9dQg9tVTxr6f8vV_RmEbY/view?usp=sharing">Video-1 </a> ii. <a href="https://drive.google.com/file/d/1L5qkumMOv6EIQjezlBc8CwaDMthQtM8T/view?usp=sharing">Video-2 </a></li>
   <li>Azure Services Used:-
-   <ul><li><a href="https://github.com/DaZZler12/My-FRT-Project/tree/master" target="_blank">Azure App Services Coding Implementation</a>, <a href="https://github.com/DaZZler12/My-FRT-Project/actions/runs/1817825408">Deployment</a>, <a href="https://mycovid19selfchecker.azurewebsites.net/" target="_blank">Running Website</a><br><br>
+   <ul><li><a href="https://github.com/DaZZler12/My-FRT-Project/tree/master" target="_blank">Azure App Services Coding Implementation</a>, <a href="https://github.com/DaZZler12/My-FRT-Project/actions/runs/1817825408">Deployment</a>, <a href="https://mycovid19selfchecker.azurewebsites.net/">Running Website</a><br><br>
    <img src="https://github.com/DaZZler12/My-FRT-Project/blob/main/images/appservice.jpg"></li></ul><br>
     
-   <ul><li><a href="https://github.com/DaZZler12/covid19-info-frt/tree/main/Website">Azure Static Web App Coding Implementation</a>, <a href="https://github.com/DaZZler12/covid19-info-frt/runs/5125079443?check_suite_focus=true" target="_blank">Deployment</a>, <a href="https://red-beach-0fec6a200.1.azurestaticapps.net/" target="_blank">Running Website</a><br><br><img src="https://github.com/DaZZler12/My-FRT-Project/blob/main/images/staticwebapp.jpg"></li></ul><br>
+   <ul><li><a href="https://github.com/DaZZler12/covid19-info-frt/tree/main/Website">Azure Static Web App Coding Implementation</a>, <a href="https://github.com/DaZZler12/covid19-info-frt/runs/5125079443?check_suite_focus=true">Deployment</a>, <a href="https://red-beach-0fec6a200.1.azurestaticapps.net/">Running Website</a><br><br><img src="https://github.com/DaZZler12/My-FRT-Project/blob/main/images/staticwebapp.jpg"></li></ul><br>
    
-   <ul><li><a href="https://github.com/DaZZler12/My-FRT-Project/tree/Functions/HttpTrigger%20Function" target="_blank">Azure HttpTrigger Function Coding Implementation</a><br><br><img src="https://github.com/DaZZler12/My-FRT-Project/blob/main/images/httptrigger.jpg"></li></ul><br>
+   <ul><li><a href="https://github.com/DaZZler12/My-FRT-Project/tree/Functions/HttpTrigger%20Function">Azure HttpTrigger Function Coding Implementation</a><br><br><img src="https://github.com/DaZZler12/My-FRT-Project/blob/main/images/httptrigger.jpg"></li></ul><br>
    
-   <ul><li><a href="https://github.com/DaZZler12/My-FRT-Project/tree/TimerFunction/TimerTrigger" target="_blank">Azure TimerTrigger Function Coding Implementation</a><br><br><img src="https://github.com/DaZZler12/My-FRT-Project/blob/main/images/timmer.jpg"></li></ul><br>
+   <ul><li><a href="https://github.com/DaZZler12/My-FRT-Project/tree/TimerFunction/TimerTrigger">Azure TimerTrigger Function Coding Implementation</a><br><br><img src="https://github.com/DaZZler12/My-FRT-Project/blob/main/images/timmer.jpg"></li></ul><br>
    
    <ul><li><a>Azure Table Storage</a><br><br><img src="https://github.com/DaZZler12/My-FRT-Project/blob/main/images/table.jpg"></li></ul>
   </li>
@@ -41,7 +41,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://mycovid19selfchecker.azurewebsites.net/" target="_blank">
+  <a href="https://mycovid19selfchecker.azurewebsites.net/">
     <img src="https://github.com/DaZZler12/My-FRT-Project/blob/main/images/icon2.png" alt="Logo" width="100" height="90">
   </a>
 
