@@ -1,7 +1,7 @@
 from flask import Flask , render_template , request,flash,url_for
 import random,string
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
+# from sendgrid import SendGridAPIClient
+# from sendgrid.helpers.mail import Mail
 app = Flask(__name__)
 
 import pickle
